@@ -5,4 +5,12 @@ export class Point {
     this.x = x;
     this.y = y;
   }
+  public getCoordinates(): number[] {
+    var coordinates = [this.x, this.y];
+    return coordinates;
+  }
+  public getDifferance(location: number[]): number {
+    var distance = location[0] - this.x + location[1] - this.y;
+    return distance;
+  }
 }
